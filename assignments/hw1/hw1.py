@@ -1,35 +1,59 @@
 """
-Name: <your name goes here – first and last>
-<ProgramName>.py
-
-Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
-
+Name: Dylan Benton Embrey
+Homework 1.py
+Problem: This assignment is to understand the editing and programming phases of python to make a series of values go
+through mathematical expressions to find an answer.
 Certification of Authenticity:
-<include one of the following>
-I certify that this assignment is entirely my own work.
-I certify that this assignment is my own work, but I discussed it with: <Name(s)>
+This assignment is my work.
 """
 
 
-def calc_rec_area():
-    pass
+def rec_area():
+    length = eval(input("Enter the length: "))
+    width = eval(input("Enter the width: "))
+    area = length * width
+    print("Area =", area)
 
 
-def calc_volume():
-    pass
+rec_area()
 
 
-def shooting_percentage():
-    pass
+def rec_volume():
+    height = eval(input("What is the height: "))
+    length = eval(input("What is the length: "))
+    width = eval(input("What is the width: "))
+    volume = (length * width * height)
+    print("The volume is: ", volume)
+
+
+rec_volume()
+
+
+def shooting():
+    shooting_total = eval(input("Enter the players total shots: "))
+    shooting_made = eval(input("Enter the number of shots made: "))
+    shooting_percent = (shooting_made/shooting_total)
+    print("The Shooting Percent: %", shooting_percent * 100)
+
+
+shooting()
 
 
 def coffee():
-    pass
+
+    coffee_pounds = eval(input("How many pounds of coffee would you like? "))
+    cost = ((10.50 + .86) * coffee_pounds) + 1.50
+    print("The total total cost of your order is", cost)
+
+
+coffee()
 
 
 def kilometers_to_miles():
-    pass
+    kilometer = eval(input("How many kilometers did you travel? "))
+    convert = 0.62
+    miles = kilometer * convert
+    print("That's", miles, "miles!")
 
 
-if __name__ == '__main__':
-    pass
+kilometers_to_miles()
