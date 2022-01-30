@@ -4,6 +4,7 @@ from io import StringIO
 from types import LambdaType
 
 from pylint import epylint as lint
+from typing import List
 
 
 class TestItem:
@@ -394,7 +395,7 @@ class ListStream:
         pass
 
 
-def get_IO(func, input: list[str] = None):
+def get_IO(func, input: List[str] = None):
     """
     captures the output of func
     returns a tuple of:

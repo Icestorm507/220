@@ -1,36 +1,67 @@
 """
-Name: <your name goes here – first and last>
-<ProgramName>.py
-
-Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
-
+Name: Dylan Benton Embrey
+Homework #2.py
+Problem: This program will help solve questions regarding various math problems using different means such as
+addition, multiplication, or division.
 Certification of Authenticity:
-<include one of the following>
-I certify that this assignment is entirely my own work.
-I certify that this assignment is my own work, but I discussed it with: <Name(s)>
+I certify that this assignment is entirely my own work done on Jan 29th.
 """
 import math
 
 
 def sum_of_threes():
-    pass
+    n = eval(input("what is the upper bound: "))
+    return sum(range(3, n + 1, 3))
 
 
-def multiplication_table():
-    pass
+print("The sum of threes is", sum_of_threes())
+
+
+def multiplication_table(start, stop):
+    for x in range(start, stop + 1):
+        for y in range(start, stop + 1):
+            print(str(x * y), end=" ")
+        print()
+
+
+multiplication_table(1, 10)
 
 
 def triangle_area():
-    pass
+    a = eval(input("Enter side length a: "))
+    b = eval(input("Enter side length b: "))
+    c = eval(input("Enter side length c: "))
 
+    s = (a + b + c) / 2
+
+    area: float = math.sqrt(s * (s - a) * (s - b) * (s - c))
+
+    print("The area of a triangle is:", area)
+
+
+triangle_area()
 
 def sum_squares():
-    pass
+    lower = eval(input("Enter lower range: "))
+    upper = eval(input("Enter upper range: "))
+    n = (lower, upper)
+    square_formula = ((n * n + 1) * (2 * n + 1)) / 6)
+    print("The sum of the squares is: ", square_formula)
+
+sum_squares()
 
 
 def power():
-    pass
+        num = eval(input("The number: "))
+        p = eval(input("The power: "))
+        a = 1
+        for n in range(p):
+            a = a * num
 
+        print(num, "^", p, a)
+
+
+    power()
 
 if __name__ == '__main__':
     pass
