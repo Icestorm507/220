@@ -21,7 +21,7 @@ def multiplication_table(start, stop):
     for x in range(start, stop + 1):
         for y in range(start, stop + 1):
             print(str(x * y), end=" ")
-        print()
+            print()
 
 
 multiplication_table(1, 10)
@@ -45,8 +45,7 @@ def sum_squares():
     lower = eval(input("Enter lower range: "))
     upper = eval(input("Enter upper range: "))
     n = (lower, upper)
-    square_formula = ((n * n + 1) * (2 * n + 1)) / 6)
-    print("The sum of the squares is: ", square_formula)
+    print("The sum of the squares is: ", sum_squares)
 
 sum_squares()
 
@@ -57,11 +56,10 @@ def power():
         a = 1
         for n in range(p):
             a = a * num
+            assert isinstance(a, object)
+            print(num,"^",p,a)
 
-        print(num, "^", p, a)
-
-
-    power()
+power()
 
 if __name__ == '__main__':
     pass
