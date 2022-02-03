@@ -7,7 +7,6 @@ Problem: This code will help show the average number of vehicles on the road per
 and the average number of vehicles per road.
 This is my work.
 """
-import math
 
 
 def traffic():
