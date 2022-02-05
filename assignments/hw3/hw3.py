@@ -38,7 +38,7 @@ def newton():
 
 
 def sequence():
-    seq = range()
+    seq = range("")
     for i in range(seq):
         sequence_list = eval(input("How many terms would you like? "))
     print(seq)
