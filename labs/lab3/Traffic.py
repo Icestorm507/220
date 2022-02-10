@@ -26,7 +26,7 @@ def traffic():
         print("Road", i + 1, "average vehicles per day:", sum_cars)
     average_total = (total_num_cars / roads_surveyed)
     print("Total number of vehicles traveled on all roads:", total_num_cars)
-    print("Average number of vehicles per road:", average_total)
+    print("Average number of vehicles per road:", average_total) 
 
 
 traffic()
