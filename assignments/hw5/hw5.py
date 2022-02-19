@@ -2,7 +2,7 @@
 Name: Dylan Embrey
 hw5.py
 Problem: This program will show initials and even convert english to pig latin.
-I certify that this assignment is entirely my own work.
+I certify that this assignment is entirely my own work..
 """
 
 
