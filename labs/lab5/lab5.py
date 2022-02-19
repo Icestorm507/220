@@ -104,6 +104,8 @@ def process_string():
     print("The number of letters is:", character_number)
 
 
+process_string()
+
 def process_list():
     pt = Point(5, 10)
     values = [5, "hi", 2.5, "there", pt, "7.2"]
