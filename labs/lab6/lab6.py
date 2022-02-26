@@ -36,8 +36,7 @@ def vigenere():
     key_length = len(key)
     key_int = [ord(i) for i in key]
     coding_int = [ord(i) for i in coding]
-    encoded = ''
-    coding.replace(" ", "")
+    encoded = ' '
     for c in range(len(coding_int)):
         encryption = (coding_int[c] + key_int[c % key_length]) % 26
         encoded += chr(encryption + 65)
@@ -49,3 +48,5 @@ def vigenere():
     message3_text.draw(box)
     box.getMouse()
     return encoded
+
+vigenere()

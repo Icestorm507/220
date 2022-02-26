@@ -453,8 +453,8 @@ def get_all_numbers_in_string(line):
     return re.findall("\d+\.\d+|\d+", line)
 
 
-def build_IO_section(name, tests, expected, dynamic_tests, test_func, test_all_output=False, error_range=None,
-                     comp_func=None):
+def build_IO_section(name: object, tests: object, expected: object, dynamic_tests: object, test_func: object, test_all_output: object = False, error_range: object = None,
+                     comp_func: object = None) -> object:
     """
     :param name: the name of the test
     :param tests: sequence of test inputs
