@@ -27,5 +27,4 @@ def Special_Door():
     win.close()
 
 
-
 Special_Door()

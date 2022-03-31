@@ -63,3 +63,4 @@ class Door:
 
     def set_secret(self, secret):
         self.set_secret(self, secret)
+
