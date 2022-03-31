@@ -46,3 +46,4 @@ class Button:
 
     def color(self, color):
         self.shape.setFill(color)
+
