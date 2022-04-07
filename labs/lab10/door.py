@@ -62,5 +62,9 @@ class Door:
             return False
 
     def set_secret(self, secret):
-        self.set_secret(self, secret)
+         if self.set_secret(self, secret) == secret:
+            return True
+         else:
+            return False
+
 

@@ -33,13 +33,7 @@ class Button:
         y1 = self.shape.getP1().getY()
         x2 = self.shape.getP2().getX()
         y2 = self.shape.getP2().getY()
-        if point <= x2:
-            return True
-        elif point >= x1:
-            return True
-        elif point >= y2:
-            return True
-        elif point <= y1:
+        if x2 >= point >= x1 and y1 <= point <= y2:
             return True
         else:
             return False
