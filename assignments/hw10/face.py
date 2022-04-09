@@ -27,7 +27,7 @@ class Face:
         pass
 
     def shock(self):
-        pass
+        self.mouth = self.left_eye
 
     def wink(self):
-        pass
+        self.left_eye = self.mouth
