@@ -10,21 +10,26 @@ from button import Button
 from graphics import *
 
 
-def Special_Door():
+def main():
     win_width = 700
     win_height = 800
     win = GraphWin("Test", win_width, win_height)
     win.setBackground('white')
     door_outline = Rectangle(Point(250, 275), Point(420, 760))
-    dar = Door(door_outline, "Closed")
-    dor = Door(door_outline, "Open")
-    dar.color_door('red')
-    dar.draw(win)
+    door_closed = Door(door_outline, "Closed")
+    door_open = Door(door_outline, "Open")
+    door_closed.color_door('red')
+    door_closed.draw(win)
     button_outline = Rectangle(Point(250, 75), Point(420, 160))
     bar = Button(button_outline, "Exit")
     bar.draw(win)
     win.getMouse()
-    win.close()
+    if bar.is_clicked(button_outline):
+        win.close()
+    if door_closed.is_clicked(door_outline):
+        door_open.draw(win)
+    else:
+        door_closed.draw(win)
 
 
-Special_Door()
+main()
